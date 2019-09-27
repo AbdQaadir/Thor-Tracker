@@ -20,11 +20,13 @@ class goal {
     }
 }
 var i = 0;
+var j = 0;
 var goalIndex = 0
 let checked = 0
 let percentage = 0
 // let newGoal = new goal(`goal[i]`, goalInput.value)
 addGoal.addEventListener('click', () => {
+
     if (goalInput.value==""){
         alert("Enter a goal")
     }
@@ -52,6 +54,7 @@ todoForm.addEventListener("submit", () => {
         alert("Enter a task")
     }
     else{
+        j++
         console.log(todoForm)
         i++;
         const label = document.createElement("label")
